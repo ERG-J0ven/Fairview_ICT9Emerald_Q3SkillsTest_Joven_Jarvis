@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Skills Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-image:url('airairair.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="">AirJ</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a  class="nav-link text-white" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="">Flights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="">Schedule</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-white" href="">Help</a>
+        </li>
+      </ul>
+      
+      <form class="d-flex">
+        <button class="btn btn-primary" type="button">Create Account</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<br>
+
+<div style="text-align: center; margin-left: 300px; margin-right: 300px; border: 2px solid black; border-radius: 12px; background-color: rgb(255, 255, 255, 0.6);" class="contanier mt=3">
+
+<div id="registernow" class="container mt-3">
+    <form action="#">
+
+        <br>
+
+        <h1>Registration</h1>
+
+        <details ontoggle="instructing()">
+        <summary><u>Instructions</u></summary>
+        <i id="messenger"></i>
+        </details>
+
+        <br>
+
+        <div class="mb-3">
+            <img src="PREVIEWIMAGE.png" id="pfpprev" class="rounded-circle img-fluid" width="120px">
+        </div>
+        <button type="button" class="btn btn-success">Upload image</button>
+
+        <br><br>
+        
+
+        <label style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;" for="">Name</label>
+        <br>
+        <input class="form-control" id="Names" name="naems" type="text" placeholder="John Doe" required >
+
+        <br><br>
+
+        <label style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;" for="">Email</label>
+        <br>
+        <input class="form-control" type="email" name="emailme" id="emailed" placeholder="JohnDoe@email.com" required>
+
+        <br><br>
+
+        <label style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;" for="">Birth Date</label>
+        <br>
+        <input type="date" class="form-control" id="birth" placeholder="dd/mm/yy" required>
+
+        <br><br>
+
+        <label style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;" for="">Contact Number</label>
+        <br>
+        <input type="number" class="form-control" id="phone" placeholder="0912 123 4567" required>
+
+        <br><br>
+        
+        <label style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;" for="">Username</label>
+        <br>
+        <input type="text" class="form-control" id="user"
+        placeholder="JohnDoe123" required>
+
+        <br><br>
+
+        <label style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;" for="">Password</label>
+        <br>
+        <input type="number" class="form-control" id="pass"
+        placeholder="12345678" required>
+
+        <br><br>
+
+        <input type="radio" id="policy" name="terms" value="policies">
+        <label style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;" for="termsandpolicy">Agree to our <a href="">Terms and Policies</a></label>
+
+        <br><br>
+
+        <button id="creataccount" name="create" type="submit" class="btn btn-success" onclick="ACCOUNTACCOUNT()" >Create my Account</button>
+        <br>
+    </form>
+</div>
+</div>
+
+<script>
+    function instructing(){
+            document.getElementById('messenger').innerHTML = "Fill out the form to create your account"
+        };
+
+    function ACCOUNTACCOUNT(){
+        alert("Account Created!")
+    };
+</script>
+
+
+    
+</body>
+</html>
